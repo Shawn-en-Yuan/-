@@ -6,19 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
-  <header class="header">
-    這是 header
-  </header>
+<div class="header bg-primary">
+    <h1><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true" alt=""></a></h1>
+    <ul >
+        <li ><a class="text-white fs-5" href="#">系列鏡框</a></li>
+        <li><a class="text-white fs-5" href="#">門市據點</a></li>
+        <li><a class="text-white fs-5" href="#">部落格</a></li>
+        <li><a class="text-white fs-5" href="#">常見問題</a></li>
+    </ul>
+</div>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
+  <div class="footer bg-primary">
+    <div class="container">
+        <div class="footer-nav mb-5">
+            <ul class="footer-nav-bar fs-6">
+                <li><a class="text-white" href="#">首頁</a></li>
+                <li><a class="text-white" href="#">系列鏡框</a></li>
+                <li><a class="text-white" href="#">門市據點</a></li>
+                <li><a class="text-white" href="#">部落格</a></li>
+                <li><a class="text-white" href="#">常見問題</a></li>
+            </ul>
+            <ul class="footer-sm-connect mb-4">
+                <li><a class="text-white fs-3 fs-md-4 fs-sm-6" href="tel:0800-000-000">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg" alt="">
+                    0800-000-000</a>
+                </li>
+                <li class=""><a class="text-white fs-3 fs-md-4 fs-sm-6" href="mailto:glasses@business.com">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg" alt="">
+                    glasses@business.com</a>
+                </li>
+            </ul>
+            <ul class="footer-nav-icon">
+                <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-fb.svg" alt=""></a></li>
+                <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-ig.svg" alt=""></a></li>
+                <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <ul class="footer-connect mb-4">
+            <li><a class="text-white fs-3 fs-md-4 fs-sm-6" href="tel:0800-000-000">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg" alt="">
+                0800-000-000</a>
+            </li>
+            <li class="mb-4"><a class="text-white fs-3 fs-md-4 fs-sm-6" href="mailto:glasses@business.com">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg" alt="">
+                glasses@business.com</a>
+            </li>
+        </ul>
+        <div class="copyright fs-7 text-white">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <ul>
+                <li><a class="fs-7 text-white" href="#">隱私權政策</a></li>
+                <li><a class="fs-7 text-white" href="#">服務條款</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
